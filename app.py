@@ -2,7 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.set_page_config(page_title="Cinkaya Group - Fiyat Analizi", page_icon=":chart_with_upwards_trend:", layout="wide")
+st.set_page_config(page_title="GLINT - Fiyat Analizi", page_icon=":chart_with_upwards_trend:", layout="wide")
 
 st.markdown("""
 <style>
@@ -23,16 +23,16 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-col_logo, col_title = st.columns([1, 5])
-with col_logo:
-    st.image("cinkaya group logo-06.png", width=150)
-with col_title:
-    st.markdown("""
-    <div class="header-banner">
-        <div style="font-size:1.6rem; font-weight:800; margin-bottom:4px;">Fiyat ve Iskonto Analizi</div>
-        <div style="font-size:0.9rem; opacity:0.8;">Market ve Toptanci kanallari - Bagimsiz senaryo hesaplamasi</div>
-    </div>
-    """, unsafe_allow_html=True)
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("cinkaya group logo-06.png", use_container_width=True)
+
+st.markdown("""
+<div class="header-banner">
+    <div style="font-size:1.6rem; font-weight:800; margin-bottom:4px;">GLINT - Fiyat ve Iskonto Analizi</div>
+    <div style="font-size:0.9rem; opacity:0.8;">Market ve Toptanci kanallari - Bagimsiz senaryo hesaplamasi</div>
+</div>
+""", unsafe_allow_html=True)
 
 KDV = 0.20
 
