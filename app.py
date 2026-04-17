@@ -31,7 +31,7 @@ with col_title:
     st.markdown("""
     <div class="header-banner">
         <div style="font-size:1.6rem; font-weight:800; margin-bottom:4px;">Fiyat & İskonto Analizi</div>
-        <div style="font-size:0.9rem; opacity:0.8;">Market ve Toptancı kanalları · Bağımsız senaryo hesaplaması</div>
+        <div style="font-size:0.9rem; opacity:0.8;">Market ve Toptancı kanalları - Bağımsız senaryo hesaplaması</div>
     </div>
     """, unsafe_allow_html=True)
 
