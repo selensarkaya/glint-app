@@ -2,7 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.set_page_config(page_title="GLINT - Fiyat Analizi", page_icon=":chart_with_upwards_trend:", layout="wide")
+st.set_page_config(page_title="GLINT - Fiyat Analizi", page_icon="cinkaya group logo-06.png", layout="wide")
 
 st.markdown("""
 <style>
