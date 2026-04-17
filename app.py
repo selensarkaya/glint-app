@@ -2,7 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.set_page_config(page_title="GLİNT — Fiyat & İskonto Analizi", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Cinkaya Group — Fiyat Analizi", page_icon="🏷️", layout="wide")
 
 st.markdown("""
 <style>
@@ -24,11 +24,16 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<div class="header-banner">
-    <div style="font-size:1.6rem; font-weight:800; margin-bottom:4px;">GLİNT — Fiyat & İskonto Analizi</div>
-    <div style="font-size:0.9rem; opacity:0.8;">Market ve Toptancı kanalları · Bağımsız senaryo hesaplaması</div>
-</div>
-""", unsafe_allow_html=True)
+col_logo, col_title = st.columns([1, 5])
+with col_logo:
+    st.image("cinkaya_group_logo-06.png", width=150)
+with col_title:
+    st.markdown("""
+    <div class="header-banner">
+        <div style="font-size:1.6rem; font-weight:800; margin-bottom:4px;">Fiyat & İskonto Analizi</div>
+        <div style="font-size:0.9rem; opacity:0.8;">Market ve Toptancı kanalları · Bağımsız senaryo hesaplaması</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 KDV = 0.20
 def fmt(v): return f"₺{v:,.2f}".replace(",","X").replace(".",",").replace("X",".")
