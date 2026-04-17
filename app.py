@@ -25,7 +25,7 @@ st.markdown("""
 
 col_logo, col_title = st.columns([1, 5])
 with col_logo:
-    st.image("cinkaya_group_logo-06.png", width=150)
+    st.image("cinkaya group logo-06.png", width=150)
 with col_title:
     st.markdown("""
     <div class="header-banner">
