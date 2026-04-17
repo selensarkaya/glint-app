@@ -129,8 +129,8 @@ with tab2:
         st.markdown(f"""
         <table class="fiyat-tablo">
         <tr><th>Kalem</th><th>%{int(t_malt)} Toptanci Marji</th><th>%{int(t_must)} Toptanci Marji</th><th>Fark</th></tr>
-        <tr><td>Toptancının Alış Fiyatı (bizden)</td><td>{fmt(net_t)}</td><td>{fmt(net_t)}</td><td>—</td></tr>
-        <tr class="bold-green"><td>Toptancı → Markete Satış</td><td>{fmt(ts_alt)}</td><td>{fmt(ts_ust)}</td><td>{fmt(ts_ust-ts_alt)}</td></tr>
+       <tr><td>Toptancinin Alis Fiyati (bizden)</td><td>{fmt(net_t)}</td><td>{fmt(net_t)}</td><td>-</td></tr>
+        <tr class="bold-green"><td>Toptanci → Markete Satış</td><td>{fmt(ts_alt)}</td><td>{fmt(ts_ust)}</td><td>{fmt(ts_ust-ts_alt)}</td></tr>
         <tr><td>Toptancının Kârı (TL)</td><td>{fmt(tk_alt)}</td><td>{fmt(tk_ust)}</td><td>{fmt(tk_ust-tk_alt)}</td></tr>
         <tr><td>Toptancının Kâr Marjı</td><td>{pct(t_malt/100)}</td><td>{pct(t_must/100)}</td><td>{pct((t_must-t_malt)/100)}</td></tr>
         <tr><td colspan="4" style="background:#F8FAFC;color:#718096;font-size:0.8rem;padding:4px 10px;">▼ Perakende Satış</td></tr>
