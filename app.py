@@ -135,7 +135,7 @@ with tab2:
         st.markdown("#### A. Maliyet Parametreleri")
         t_alis      = st.number_input("Birim Mal Maliyeti - Alis (TL KDV dahil)", value=54.0, step=0.5, key="t_a")
         t_liste     = st.number_input("Liste Fiyati - Bizim Toptanciya Satisimiz (TL KDV dahil)", value=80.0, step=0.5, key="t_l")
-        t_perakende = st.number_input("Perakende Fiyati - Markette Tuketiciye (TL KDV dahil)", value=100.0, step=0.5, key="t_p")
+        t_perakende = st.number_input("Perakende Fiyati - Markette Tuketiciye (TL KDV dahil)", value=119.0, step=0.5, key="t_p")
         t_nak = st.slider("Nakliye Maliyeti (%)", 0.0, 30.0, 10.0, 0.5, key="t_n", format="%g%%")
         t_mkt = st.slider("Marketing Maliyeti (%)", 0.0, 20.0, 2.0, 0.5, key="t_m", format="%g%%")
         gercek_t = t_alis * (1 + t_nak/100 + t_mkt/100)
