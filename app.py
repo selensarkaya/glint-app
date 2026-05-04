@@ -60,7 +60,7 @@ with tab1:
     L, R = st.columns([1, 1.4], gap="large")
     with L:
         st.markdown("#### A. Maliyet Parametreleri")
-        m_alis      = st.number_input("Birim Mal Maliyeti - Alis (TL KDV dahil)", value=54.0, step=0.5, key="m_a")
+        m_alis      = st.number_input("Birim Mal Maliyeti - Alis (TL KDV dahil)", value=72.0, step=0.5, key="m_a")
         m_liste     = st.number_input("Liste Fiyati - Bizim Markete Satisimiz (TL KDV dahil)", value=80.0, step=0.5, key="m_l")
         m_perakende = st.number_input("Perakende Fiyati - Markette Tuketiciye (TL KDV dahil)", value=119.0, step=0.5, key="m_p")
         m_nak = st.slider("Nakliye Maliyeti (%)", 0.0, 30.0, 10.0, 0.5, key="m_n", format="%g%%")
@@ -133,7 +133,7 @@ with tab2:
     L2, R2 = st.columns([1, 1.4], gap="large")
     with L2:
         st.markdown("#### A. Maliyet Parametreleri")
-        t_alis      = st.number_input("Birim Mal Maliyeti - Alis (TL KDV dahil)", value=54.0, step=0.5, key="t_a")
+        t_alis      = st.number_input("Birim Mal Maliyeti - Alis (TL KDV dahil)", value=72.0, step=0.5, key="t_a")
         t_liste     = st.number_input("Liste Fiyati - Bizim Toptanciya Satisimiz (TL KDV dahil)", value=80.0, step=0.5, key="t_l")
         t_perakende = st.number_input("Perakende Fiyati - Markette Tuketiciye (TL KDV dahil)", value=119.0, step=0.5, key="t_p")
         t_nak = st.slider("Nakliye Maliyeti (%)", 0.0, 30.0, 10.0, 0.5, key="t_n", format="%g%%")
